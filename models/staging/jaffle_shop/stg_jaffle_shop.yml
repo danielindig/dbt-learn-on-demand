@@ -15,7 +15,7 @@ models:
       - name: order_id
         description: Primary key for stg_orders.
       - name: status
-        description: "{{ doc('order status') }}"
+        description: "{{ doc('order_status') }}"
         tests:
           - accepted_values:
               values: ['completed', 'shipped', 'returned', 'placed', 'return_pending']
